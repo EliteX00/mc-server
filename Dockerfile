@@ -9,6 +9,8 @@ COPY . .
 
 # Make start.sh executable
 RUN chmod +x start.sh
+RUN chmod 644 eula.txt server.properties
+
 
 # Expose Minecraft's default port
 EXPOSE 25565
